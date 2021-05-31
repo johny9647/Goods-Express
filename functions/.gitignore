@@ -1,3 +1,4 @@
 node_modules/
 service-accounts/service-account.json
 firebase-debug.log
+package-lock.json
