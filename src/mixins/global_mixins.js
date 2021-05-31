@@ -96,6 +96,7 @@ export default
         },
         async $_fbCall(method, data = null)
         {
+            FUNCTIONS.region = 'asia-northeast1';
             let call_method = FUNCTIONS.httpsCallable(method);
             return await call_method(data);
         },

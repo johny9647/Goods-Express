@@ -6,6 +6,7 @@
   "author": "johny9647 <johny9647@gmail.com>",
   "private": true,
   "scripts": {
+    "dev" : "quasar dev",
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
