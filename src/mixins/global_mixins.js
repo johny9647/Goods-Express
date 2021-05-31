@@ -2,8 +2,6 @@ import axios                    from 'axios';
 import { FUNCTIONS }            from "../boot/firebase";
 import FAccountClass            from '../classes/FAccountClass';
 import {formatNumber}           from '../utilities/NumberUtils';
-import DB_SLOT                  from '../models/DB_SLOT';
-import { formatDate }           from '../utilities/DateUtils';
 import moment                   from 'moment';
 export default
 {
@@ -51,11 +49,6 @@ export default
 
                 return `${d}:${h}:${m}:${s}`;
             }
-        },
-        async $_getSlotInfo()
-        {
-            await this.$bind('current_slot_info', new DB_SLOT().doc(this.current_user_info.active_slot));
-            this.loading_slot_info = false;
         },
         $_formatNumber(number, options)
         {

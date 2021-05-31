@@ -41,7 +41,8 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <q-btn label="test" @click="testing()"></q-btn>
+      <!-- <router-view /> -->
     </q-page-container>
   </q-layout>
 </template>
@@ -102,6 +103,12 @@ export default {
       leftDrawerOpen: false,
       essentialLinks: linksData
     }
+  },
+ methods:{
+  async testing()
+  {
+    await this.$_fbCall('frontRegistration');
   }
+ }
 }
 </script>
