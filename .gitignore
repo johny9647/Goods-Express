@@ -29,6 +29,7 @@ yarn-error.log*
 .idea
 config.js
 package-lock.json
+node_modules
 *.suo
 *.ntvs*
 *.njsproj
