@@ -91,19 +91,20 @@
       <!-- code for mobile responsive header -->
 	<div class="mobile-onlyy" v-if="$q.platform.is.hasOwnProperty('mobile')">
 		<div class="mobile-header">
-			<div class="header-icon" style="cursor:pointer" > 
-			<q-toolbar-title>
-			<q-avatar>
+        <!-- <div class="header-icon" style="cursor:pointer" > 
+        <q-toolbar-title>
+        <q-avatar> -->
 			<!-- <img src="../assets/geer-white.png" class="image"> -->
-			</q-avatar>
+			<!-- </q-avatar>
 			</q-toolbar-title>    
-			</div>
+			</div> -->
             <div class="mobile-search">
-                <q-input bg-color="white" placeholder="Enter Search Keyword..." dense outlined class="q-mr-xl full-width">
+                <!-- <q-input bg-color="white" placeholder="Enter Search Keyword..." dense outlined class="q-mr-xl full-width">
                 <template v-slot:append>
                     <q-icon name="search"  class="cursor-pointer"/>
                 </template>
-                </q-input>
+                </q-input> -->
+                <div style="color:white;font-size:25px">Good Express</div>
             </div>
         </div>
 		

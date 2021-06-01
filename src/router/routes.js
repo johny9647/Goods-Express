@@ -5,14 +5,15 @@ const routes = [
         component: () => import('src/layouts/FrontLayout.vue'),
         children:
         [
-            { name: 'front_home', path: '', component: () => import('pages/Frontend/Login.vue') },
+            { name: 'front_home', path: 'login', component: () => import('pages/Frontend/Login.vue') },
         ]
     },
     {
         path: '/member',
         component: () => import('layouts/MemberLayout.vue'),
         children: [
-        { path: '', component: () => import('pages/Index.vue') }
+            { name: 'home', path: 'member/home', component: () => import('pages/Member/Home.vue') },
+            { path: '', component: () => import('pages/Index.vue') }
         ]
     },
 
