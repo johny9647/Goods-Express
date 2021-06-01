@@ -29,7 +29,6 @@ const routes = [
         component: () => import('layouts/MemberLayout.vue'),
         children: [
             { name: 'home', path: 'home', component: () => import('pages/Member/Home.vue') },
-            { name: 'notif', path: 'notif', component: () => import('pages/Member/Notif.vue') },
         ]
     },
 
