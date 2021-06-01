@@ -8,11 +8,10 @@
 	<div class="mobile-onlyy" v-if="$q.platform.is.hasOwnProperty('mobile')">
 		<div class="mobile-header">
             <div class="mobile-search">
-                </q-input> -->
+                </q-input>
                 <div style="color:white;font-size:25px">Good Express</div>
             </div>
         </div>
-		
 
 	<!-- code for mobile footer -->
 	<div class="mobile-footer">

@@ -3,7 +3,7 @@
             login
         </div>
     </template>
-    <<script>
+    <script>
     export default {
         
     }

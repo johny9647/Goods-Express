@@ -1,3 +1,5 @@
+import Home from 'pages/Member/Home.vue';
+
 
 const routes = [
     {
@@ -5,15 +7,29 @@ const routes = [
         component: () => import('src/layouts/FrontLayout.vue'),
         children:
         [
-            { name: 'front_home', path: 'login', component: () => import('pages/Frontend/Login.vue') },
+            { 
+                name: 'authenticate',          
+                path: 'login',    
+                component: () => import('pages/Authenticate/Index.vue') 
+            },
+            { 
+                name: 'authenticate.register', 
+                path: 'register', 
+                component: () => import('pages/Authenticate/Register/Index.vue') 
+            },
+            { 
+                name: 'authenticate.forgot', 
+                path: 'forgot', 
+                component: () => import('pages/Authenticate/Forgot/Index.vue') 
+            },
         ]
     },
     {
         path: '/member',
         component: () => import('layouts/MemberLayout.vue'),
         children: [
-            { name: 'home', path: 'member/home', component: () => import('pages/Member/Home.vue') },
-            { path: '', component: () => import('pages/Index.vue') }
+            { name: 'home', path: 'home', component: () => import('pages/Member/Home.vue') },
+            { name: 'notif', path: 'notif', component: () => import('pages/Member/Notif.vue') },
         ]
     },
 
