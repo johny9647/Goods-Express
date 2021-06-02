@@ -68,7 +68,7 @@ export default {
                     message: 'Account successfully created.',
                     transitionShow:'scale',
                 }).onOk(() => {
-                        this.$router.push({ name: 'authenticate' });
+                        this.$router.push({ name: 'authenticate' }).catch(()=>{});;
                 })
 
             } catch (error) {

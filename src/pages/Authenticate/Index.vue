@@ -46,7 +46,7 @@ export default {
                     await AccountClass.signIn(this.email, this.password).then((res) =>
                     {
                         // let login = this.$_fbCall('loginAuditTrail', this.form_data);
-                        this.$router.push({ name: 'member' });
+                        this.$router.push({ name: 'home' }).catch(()=>{});;
                     }).catch((err) =>
                     {
                         this.$q.dialog({ title: `Invalid Login`, message: err });

@@ -11,11 +11,11 @@ export default {
 		{
             if(this.current_user_info)
             {
-                this.$router.push({ name: 'home' });
+                this.$router.push({ name: 'home' }).catch(()=>{});;
             }
             else
             {
-                this.$router.push({ name: 'authenticate' });
+                this.$router.push({ name: 'authenticate' }).catch(()=>{});;
             }
 		},
 		$route()
@@ -24,6 +24,14 @@ export default {
     },
     mounted()
     {
+        if(this.current_user_info)
+        {
+            this.$router.push({ name: 'home' }).catch(()=>{});;
+        }
+        else
+        {
+            this.$router.push({ name: 'authenticate' }).catch(()=>{});;
+        }
     }
 }
 </script>

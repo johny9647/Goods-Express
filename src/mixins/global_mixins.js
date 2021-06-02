@@ -98,7 +98,7 @@ export default
         },
         async $_logout()
         {
-            this.$router.push({ name: 'front_login' });
+            this.$router.push({ name: 'authenticate' }).catch(()=>{});;
             const AccountClass = new FAccountClass();
             AccountClass.signOut();
         },
@@ -106,14 +106,14 @@ export default
         {
             if(!this.current_user_info)
             {
-                this.$router.push({ name: 'front_login' });
+                this.$router.push({ name: '' }).catch(()=>{});;
             }
 
             if(allowed_access == 'admin')
             {
                 if(!this.current_user_info.admin)
                 {
-                    this.$router.push({ name: 'member_dashboard' });
+                    this.$router.push({ name: 'member_dashboard' }).catch(()=>{});;
                 }
             }
         }

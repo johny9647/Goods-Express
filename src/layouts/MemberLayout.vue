@@ -8,7 +8,6 @@
 	<div class="mobile-onlyy" v-if="$q.platform.is.hasOwnProperty('mobile')">
 		<div class="mobile-header">
             <div class="mobile-search">
-                </q-input>
                 <div style="color:white;font-size:25px">Good Express</div>
             </div>
         </div>
@@ -87,8 +86,12 @@ export default
     }),
 	  components: {},
 	async mounted()
-      { 
-      },
+	{ 
+		if(!this.current_user_info)
+		{
+			this.$router.push({ name: 'authenticate' }).catch(()=>{});;
+		}
+	},
     watch:
     { 
 		current_user_info()
@@ -100,7 +103,7 @@ export default
 			else
 			{
 				this.is_accessible = false;
-				this.$router.push({ name: 'login' });
+				this.$router.push({ name: 'authenticate' }).catch(()=>{});;
 			}
 		},
 		$route()
@@ -116,35 +119,35 @@ export default
 		{
 			if(this.$route.name != 'home')
 			{
-				this.$router.push({ name: 'home' });
+				this.$router.push({ name: 'home' }).catch(()=>{});;
 			}
 		},
 		routeToNotification()
 		{
 			if(this.$route.name != 'notification')
 			{
-				this.$router.push({ name: 'notification' });
+				this.$router.push({ name: 'notification' }).catch(()=>{});;
 			}
 		},
 		routeToOrders()
 		{
 			if(this.$route.name != 'orders')
 			{
-				this.$router.push({ name: 'orders' });
+				this.$router.push({ name: 'orders' }).catch(()=>{});;
 			}
 		},
 		routeToMessage()
 		{
 			if(this.$route.name != 'message')
 			{
-				this.$router.push({ name: 'message' });
+				this.$router.push({ name: 'message' }).catch(()=>{});;
 			}
 		},
 		routeToAccount()
 		{
 			if(this.$route.name != 'account')
 			{
-				this.$router.push({ name: 'account' });
+				this.$router.push({ name: 'account' }).catch(()=>{});;
 			}
 		},
     },

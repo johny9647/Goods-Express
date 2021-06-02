@@ -1,6 +1,7 @@
 <template>
     <div class="page-name">
         <h6>ACCOUNT</h6>
+        <q-btn label="Test Logout" @click="logout"></q-btn>
     </div>
 </template>
 
@@ -12,7 +13,12 @@ export default
     {
     }),
     mounted() { },
-    methods: { },
+    methods: {
+        logout()
+        {
+            this.$_logout();
+        }
+     },
     computed: { }
 }
 </script>
