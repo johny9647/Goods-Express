@@ -5,6 +5,15 @@
 </template>
 <script>
 export default {
-    
+    watch:
+    { 
+		current_user_info()
+		{
+			console.log('front');
+		},
+		$route()
+		{
+		}
+    },
 }
 </script>

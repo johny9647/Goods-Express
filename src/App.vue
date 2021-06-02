@@ -8,6 +8,7 @@ import auth_state_mixins    from './mixins/auth_state_mixins';
 import { ANALYTICS }        from "./boot/firebase";
 export default {
   name: 'App',
+  mixins: [auth_state_mixins],
   mounted()
     {
         ANALYTICS.logEvent("page_view");

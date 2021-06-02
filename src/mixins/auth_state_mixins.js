@@ -15,7 +15,7 @@ export default
             let queue = [];
 
             this.is_initializing = true;
-            queue.push(this.$_getData('public_settings'));
+            // queue.push(this.$_getData('public_settings'));
 
             if(user)
             {
@@ -28,15 +28,15 @@ export default
 
             await Promise.all(queue).then((res) =>
             {
-                if(res[0].hasOwnProperty('default_profile_picture'))
-                {
-                    this.$store.commit('vuex_settings/updateConfig', res[0]);
-                    this.is_initializing = false;
-                }
-                else
-                {
-                    alert("Invalid Website Config");
-                }
+                // if(res[0].hasOwnProperty('default_profile_picture'))
+                // {
+                //     this.$store.commit('vuex_settings/updateConfig', res[0]);
+                //     this.is_initializing = false;
+                // }
+                // else
+                // {
+                //     alert("Invalid Website Config");
+                // }
             });
         });
     },

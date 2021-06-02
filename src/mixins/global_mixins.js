@@ -16,10 +16,6 @@ export default
         current_user_info()
         {
             return this.$store.state.vuex_user.user_info;
-        },
-        app_config()
-        {
-            return this.$store.state.vuex_settings.config;
         }
     },
     methods:

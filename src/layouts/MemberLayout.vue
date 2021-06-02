@@ -86,6 +86,10 @@ export default
       },
     watch:
     { 
+		current_user_info()
+		{
+			console.log('member');
+		},
 		$route()
 		{
 		}
