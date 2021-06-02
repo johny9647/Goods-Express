@@ -1,10 +1,14 @@
 <template>
-    <div>
+    <div v-if="done_loading">
         <router-view></router-view>
     </div>
 </template>
 <script>
 export default {
+    data:() =>(
+    {
+        done_loading:false,
+    }),
     watch:
     { 
 		current_user_info()
@@ -17,6 +21,7 @@ export default {
             {
                 this.$router.push({ name: 'authenticate' }).catch(()=>{});;
             }
+            this.$q.loading.hide();
 		},
 		$route()
 		{
@@ -24,6 +29,7 @@ export default {
     },
     mounted()
     {
+        this.$q.loading.show();
         if(this.current_user_info)
         {
             this.$router.push({ name: 'home' }).catch(()=>{});;

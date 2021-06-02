@@ -18,7 +18,7 @@ export default class AccountClass
     {
         return new Promise(async (resolve, reject) =>
         {
-            await AUTH.signInWithEmailAndPassword(email, password).then((res) =>
+            await AUTH.signInWithEmailAndPassword(email.toLowerCase(), password.toLowerCase()).then((res) =>
             {
                 resolve({ uid: res.user.uid, refreshToken: res.user.refreshToken });
             }).catch((err) =>
