@@ -26,6 +26,10 @@ const routes = [
         component: () => import('layouts/MemberLayout.vue'),
         children: [
             { name: 'home', path: 'home', component: () => import('src/pages/Member/Home/Home.vue') },
+            { name: 'account', path: 'account', component: () => import('src/pages/Member/Account/Account.vue') },
+            { name: 'notification', path: 'notification', component: () => import('src/pages/Member/Notification/Notification.vue') },
+            { name: 'orders', path: 'orders', component: () => import('src/pages/Member/Orders/Orders.vue') },
+            { name: 'message', path: 'message', component: () => import('src/pages/Member/Message/Message.vue') },
         ]
     },
 
