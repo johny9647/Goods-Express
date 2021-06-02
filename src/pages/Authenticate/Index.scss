@@ -6,10 +6,10 @@
 
 .login-button {
 	button {
-		width: 280px;
 		margin-right: 8%;
-  		margin-left: 7.5%;
-  		height: 50px;
+  	margin-left: 7.5%;
+  	height: 50px;
+  	width: 84%;
 		border-radius: 20px !important;
 		font-weight: bold;
 		background-color: $secondary;
@@ -51,6 +51,7 @@ input[type="text"] {
 
 .inputWithIcon input[type="text"] {
   padding-left: 60px;
+  width: 100%;
 }
 
 input[type="password"] {
@@ -67,7 +68,8 @@ input[type="password"] {
   } 
   
   .inputWithIcon input[type="password"] {
-	padding-left: 60px;
+		padding-left: 60px;
+		width: 100%;
   }
 
 .inputWithIcon {
