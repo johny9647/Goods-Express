@@ -22,6 +22,7 @@ export default {
                 this.$router.push({ name: 'authenticate' }).catch(()=>{});;
             }
             this.$q.loading.hide();
+            this.done_loading =true;
 		},
 		$route()
 		{
@@ -38,6 +39,8 @@ export default {
         {
             this.$router.push({ name: 'authenticate' }).catch(()=>{});;
         }
+        this.done_loading =true;
+        this.$q.loading.hide();
     }
 }
 </script>
