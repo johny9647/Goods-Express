@@ -6,7 +6,7 @@
                 <q-icon id="iconq" name="fas fa-at" />
             </div>
             <div class="inputWithIcon">
-                <input v-model="password" type="text" placeholder="Password">
+                <input v-model="password" type="password" placeholder="Password">
                 <q-icon id="iconq" name="fas fa-key" />
             </div>
             <div class="login-button">
