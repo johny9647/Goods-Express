@@ -34,3 +34,5 @@ node_modules
 *.ntvs*
 *.njsproj
 *.sln
+.firebase/hosting.ZGlzdFxzcGE.cache
+firebase.json
