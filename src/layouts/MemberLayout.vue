@@ -65,8 +65,10 @@
 		</div>
 	</div>
 	</div>
+	<template v-if="current_user_info">
+    	<router-view></router-view>
+	</template>
   	</q-layout>
-  
 </template>
 
 <script>
@@ -79,16 +81,26 @@ export default
     name: 'FrontLayout',
     data: () =>
     ({
+		is_accessible:false,
     }),
 	  components: {},
-	  async mounted()
+	async mounted()
       { 
       },
     watch:
     { 
 		current_user_info()
 		{
-			console.log('member');
+			if(this.current_user_info)
+			{
+				this.is_accessible = true;
+			}
+			else
+			{
+				console.log(this.current_user_info);
+					this.is_accessible = false;
+					this.$router.push({ name: 'login' });
+			}
 		},
 		$route()
 		{

@@ -1,6 +1,3 @@
-import Home from 'pages/Member/Home.vue';
-
-
 const routes = [
     {
         path: '/',
@@ -28,7 +25,7 @@ const routes = [
         path: '/member',
         component: () => import('layouts/MemberLayout.vue'),
         children: [
-            { name: 'home', path: 'home', component: () => import('pages/Member/Home.vue') },
+            { name: 'home', path: 'home', component: () => import('src/pages/Member/Home/Home.vue') },
         ]
     },
 

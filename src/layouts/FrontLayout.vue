@@ -9,11 +9,21 @@ export default {
     { 
 		current_user_info()
 		{
-			console.log('front');
+            if(this.current_user_info)
+            {
+                this.$router.push({ name: 'home' });
+            }
+            else
+            {
+                this.$router.push({ name: 'authenticate' });
+            }
 		},
 		$route()
 		{
 		}
     },
+    mounted()
+    {
+    }
 }
 </script>
