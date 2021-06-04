@@ -3,11 +3,11 @@
         <div class="container-register">
             <div class="inputWithIcon">
                 <input type="text" @input="autoFill" v-model="form_details.first_name" placeholder="First Name">
-                <q-icon id="iconq" name="fas fa-at" />
+                <q-icon id="iconq" name="fas fa-user" />
             </div>
             <div class="inputWithIcon">
                 <input type="text" v-model="form_details.last_name" placeholder="Last Name">
-                <q-icon id="iconq" name="fas fa-at" />
+                <q-icon id="iconq" name="fas fa-user" />
             </div>
             <div class="inputWithIcon">
                 <input type="text" v-model="form_details.email" placeholder="Email">
@@ -34,7 +34,7 @@
             </div>
         </div>
          <span>
-           <p > &larr; <router-link to="/login">Return to Login Page</router-link> </p>
+           <p > &larr; <router-link to="/">Return to Login Page</router-link> </p>
         </span>
     </div>
 </template>

@@ -15,11 +15,11 @@ export default {
 		{
             if(this.current_user_info)
             {
-                this.$router.push({ name: 'home' }).catch(()=>{});;
+                this.$router.push({ name: 'home' }).catch(()=>{});
             }
             else
             {
-                this.$router.push({ name: 'authenticate' }).catch(()=>{});;
+                this.$router.push({ name: 'authenticate' }).catch(()=>{});
             }
             this.$q.loading.hide();
             this.done_loading =true;

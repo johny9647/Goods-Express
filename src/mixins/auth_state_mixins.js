@@ -19,25 +19,25 @@ export default
 
             if(user)
             {
-                queue.push(this.monitorAuthSignedIn(user));
+                await this.monitorAuthSignedIn(user);
             }
             else
             {
-                queue.push(this.monitorAuthSignedOut());
+                await this.monitorAuthSignedOut();
             }
 
-            await Promise.all(queue).then((res) =>
-            {
+            // await Promise.all(queue).then((res) =>
+            // {
                 // if(res[0].hasOwnProperty('default_profile_picture'))
                 // {
                 //     this.$store.commit('vuex_settings/updateConfig', res[0]);
-                //     this.is_initializing = false;
+                    this.is_initializing = false;
                 // }
                 // else
                 // {
                 //     alert("Invalid Website Config");
                 // }
-            });
+            // });
         });
     },
     methods:

@@ -73,18 +73,6 @@ export default
             }
 
         },
-        async $_getPageConfig()
-        {
-            let current_page = this.$route.name;
-            this.page_config = {};
-            this.app_config.admin.pages.forEach((page) =>
-            {
-                if(page.route == current_page)
-                {
-                    this.page_config = page;
-                }
-            });
-        },
         async $_getData(key)
         {
             let data = await axios.get(process.env.JSON_API_URL + `/?target=${key}`);

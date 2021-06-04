@@ -10,7 +10,8 @@
                 <q-icon id="iconq" name="fas fa-key" />
             </div>
             <div class="login-button">
-                <button @click="submitLogin()"> LOGIN </button>
+                <!-- <button @click="submitLogin()"> LOGIN </button> -->
+                <q-btn :loading="logging_in" @click="submitLogin()" color="primary">LOGIN</q-btn>
             </div>
             <span>
                 <p > Forgot your Password? Click <router-link to="/forgot"> Here </router-link> &rarr; </p>
@@ -30,13 +31,14 @@ export default {
     ({
         email: '',
         password: '',
+        logging_in:false,
     }),
     methods:
     {
         async submitLogin()
         {
             const AccountClass = new FAccountClass();
-
+            this.logging_in = true;
             try
             {
                 if(!this.is_submitting)
@@ -54,10 +56,12 @@ export default {
 
                     this.is_submitting = false;
                 }
+                this.logging_in = false;
             }
             catch (error)
             {
                 this.is_submitting = false;
+                this.logging_in = false;
                 
                 this.$q.dialog(
                 {

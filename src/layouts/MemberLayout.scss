@@ -61,7 +61,7 @@ body {
                 padding-top: 20px;
                 .search-icon{
                     color: #fafafa;
-                    background-color:$secondary;
+                    background-color:$primary;
                     height: 105%;
                     width: 50px;
                     margin-right: -12px;
@@ -146,11 +146,11 @@ body {
                     display: block;
                   }
             }
-            .category-content a:hover {background-color:$secondary; color:$accent;}
+            .category-content a:hover {background-color:$primary; color:$accent;}
               
             .category:hover .category-content {display: block;}
         
-            .category:hover .dropbtn {background-color: $secondary; color:$accent;}
+            .category:hover .dropbtn {background-color: $primary; color:$accent;}
 
 
             .account-button{
@@ -191,11 +191,11 @@ body {
                   display: block;
                 }
             
-                .dropdown-content a:hover {background-color:$secondary; color:$accent;}
+                .dropdown-content a:hover {background-color:$primary; color:$accent;}
             
                 .dropdown:hover .dropdown-content {display: block;}
             
-                .dropdown:hover .dropbtn {background-color: $secondary; color:$accent;}
+                .dropdown:hover .dropbtn {background-color: $primary; color:$accent;}
             }
 
         }

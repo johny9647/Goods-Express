@@ -16,8 +16,8 @@
 	<div class="mobile-footer">
 		<div @click="routeToHome()" class="footer-nav" >
 			<div v-if="this.$route.name=='home'">
-                <q-icon color="secondary" name="far fa-compass" size='25px' class="q-mb-sm"></q-icon>
-				<div class="text-secondary">Home</div>
+                <q-icon color="primary" name="far fa-compass" size='25px' class="q-mb-sm"></q-icon>
+				<div class="text-primary">Home</div>
 			</div>
 			<div v-else>
                 <q-icon name="far fa-compass" size='25px' class="q-mb-sm"></q-icon>
@@ -26,8 +26,8 @@
 		</div>
 		<div @click="routeToNotification()" class="footer-nav" >
 			<div v-if="this.$route.name=='notification'">
-				<q-icon color="secondary" name="far fa-bell" size='25px' class="q-mb-sm"></q-icon>
-				<div class="text-secondary">Notification</div>
+				<q-icon color="primary" name="far fa-bell" size='25px' class="q-mb-sm"></q-icon>
+				<div class="text-primary">Notification</div>
 			</div>
 			<div v-else>
                 <q-icon name="far fa-bell" size='25px' class="q-mb-sm"></q-icon>
@@ -36,8 +36,8 @@
 		</div>
         <div @click="routeToOrders()" class="footer-nav" >
 			<div  v-if="this.$route.name=='orders'">
-				<q-icon color="secondary" name="far fa-list-alt" size='25px' class="q-mb-sm"></q-icon>
-				<div class="text-secondary">Orders</div>
+				<q-icon color="primary" name="far fa-list-alt" size='25px' class="q-mb-sm"></q-icon>
+				<div class="text-primary">Orders</div>
 			</div>
 			<div v-else>
                 <q-icon name="far fa-list-alt" size='25px' class="q-mb-sm"></q-icon>
@@ -46,8 +46,8 @@
 		</div>
 		<div @click="routeToMessage()" class="footer-nav" >
 			<div  v-if="this.$route.name=='message'">
-				<q-icon color="secondary" name="far fa-envelope" size='25px' class="q-mb-sm"></q-icon>
-				<div class="text-secondary">Message</div>
+				<q-icon color="primary" name="far fa-envelope" size='25px' class="q-mb-sm"></q-icon>
+				<div class="text-primary">Message</div>
 			</div>
 			<div v-else>
                 <q-icon name="far fa-envelope" size='25px' class="q-mb-sm"></q-icon>
@@ -56,8 +56,8 @@
 		</div>
 		<div @click="routeToAccount()" class="footer-nav">
 			<div v-if="this.$route.name=='account'">
-                <q-icon color="secondary" name="far fa-user-circle" size='25px' class="q-mb-sm"></q-icon>
-				<div class="text-secondary">Account</div>
+                <q-icon color="primary" name="far fa-user-circle" size='25px' class="q-mb-sm"></q-icon>
+				<div class="text-primary">Account</div>
 			</div>
 			<div v-else>
                 <q-icon name="far fa-user-circle" size='25px' class="q-mb-sm"></q-icon>

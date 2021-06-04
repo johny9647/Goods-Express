@@ -30,6 +30,7 @@ yarn-error.log*
 config.js
 package-lock.json
 node_modules
+src-capacitor
 *.suo
 *.ntvs*
 *.njsproj

@@ -10,7 +10,7 @@
             </div>
         </div>
         <span>
-           <p > &larr; <router-link to="/login">Return to Login Page</router-link> </p>
+           <p > &larr; <router-link to="/">Return to Login Page</router-link> </p>
         </span>
     </div>
 </template>
